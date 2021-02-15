@@ -1,0 +1,114 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit; 
+    box-sizing: border-box;
+}
+
+body {
+    margin: 1.5rem;
+}
+
+.search-bar {
+	position: relative;
+    margin: 30px auto;
+    width: 95%;
+    max-width: 344px;
+    height: 48px;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+input {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
+    height: 40px;
+    left: 172px;
+    margin: 4px 0;
+    border: 0;
+    border-radius: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+ol {
+    display: none;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-gap: .5rem; 
+    width: 100%;
+    grid-template-areas: 
+        "pic1 pic2 pic3"
+        "pic4 pic5 pic6"
+        "pic7 pic8 pic9"
+        "pic10 pic11 pic12";
+}
+
+.gallery {
+    text-align: center;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+.pic1 {
+  grid-area: pic1;
+}
+
+.pic2 {
+    grid-area: pic2;
+}
+
+.pic3 {
+    grid-area: pic3;
+}
+
+.pic4 {
+    grid-area: pic4;
+}
+
+.pic5 {
+    grid-area: pic5;
+}
+  
+.pic6 {
+    grid-area: pic6;
+}
+  
+.pic7 {
+    grid-area: pic7;
+}
+  
+.pic8 {
+    grid-area: pic8;
+}
+
+.pic9 {
+    grid-area: pic9;
+}
+  
+.pic10 {
+    grid-area: pic10;
+}
+  
+.pic11 {
+    grid-area: pic11;
+}
+  
+.pic12 {
+    grid-area: pic12;
+}
+
